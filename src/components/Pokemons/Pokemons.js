@@ -1,5 +1,5 @@
 import * as React from 'react'
-
+import PokemonLine from '../PokemonLine/PokemonLine'
 
 const Pokemons = ({list}) => {
     return (
@@ -15,29 +15,15 @@ const Pokemons = ({list}) => {
                     </tr>
                 </thead>
                 <tbody>
-                {
-                    list.map((item)=>{
-                        return <tr>
-                                    <td>{item.name}</td>
-                                    <td>
-                                        <button>
-                                            <img src="https://cdn.pixabay.com/photo/2017/01/25/17/35/picture-2008484_960_720.png" alt="download img" width="30px"></img>
-                                        </button>
-                                    </td>
-                                    <td>{item.attack}</td>
-                                    <td>{item.defense}</td>
-                                    <td>
-                                        
-                                            <button>Editar</button>
-                                            <button>Borrar</button>
-
-                                        
-                                    </td>
-                                </tr>
-                    })
-                }
-                    
+                    {
+                        list?.map((item)=>{
+                            return <PokemonLine 
+                                    key={item.id} 
+                                    details={item} />})
+                    }
                 </tbody>
+                    
+                
 
             </table>
         </div>
