@@ -1,5 +1,7 @@
 import * as React from 'react'
 import EditModal from '../EditModal/EditModal'
+import DeleteModal from '../DeleteModal/DeleteModal'
+
 const PokemonLine = ({details, updateList})=>{
     return(
         <tr>
@@ -13,7 +15,7 @@ const PokemonLine = ({details, updateList})=>{
             <td>{details.defense}</td>
             <td>                
             <EditModal props={details} updateList={updateList} />
-            <button>Borrar</button>                
+            <DeleteModal id={details.id} name={details.name} updateList={updateList} />
             </td>
         </tr>
         

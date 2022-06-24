@@ -5,7 +5,6 @@ import './EditModal.css'
 const EditModal = ({props, onSubmit, updateList})=>{
     const [showModal, setShowModal] = React.useState(false)
     const handleShow= ()=>{
-        console.log("should show sth")
         setShowModal(!showModal)
     }
 
