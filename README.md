@@ -1,7 +1,7 @@
 # Devsu-Frointend-Challenge
 
 ## # Descripción
-Este repositorio presenta los resultados del **Challenge Front End Devsu ** para el puesto de **Desarrollador Full Stack**
+Este repositorio presenta los resultados del *Challenge Front End Devsu* para el puesto de **Desarrollador Full Stack**
 El proyecto consiste en un CRUD de pokemons.
 El frontend se ha realizado con React y Css.
 Los componentes se han probado utilizando react-testing-library y Jest.
