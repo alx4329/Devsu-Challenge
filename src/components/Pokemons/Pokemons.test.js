@@ -1,11 +1,11 @@
 import React from "react";
 import '@testing-library/jest-dom/extend-expect'
-import { render } from "@testing-library/react";
+import { render, screen} from "@testing-library/react";
 import Pokemons from "./Pokemons";
 import { fetchPokemons } from "../../actions/actions";
 
 
-describe('Pokemons',()=>{
+xdescribe('Pokemons',()=>{
     let list ; 
     beforeEach(async()=>{
         const fetch=await fetchPokemons()
@@ -14,8 +14,10 @@ describe('Pokemons',()=>{
             .catch(err=> console.log(err))
     })
     test ('renders content',()=>{
-        const view = render(<Pokemons list={list} />);
-        expect(view.container).toHaveTextContent('Charizard')
+        render(<Pokemons list={list} />);
+        screen.getByRole('cell', {
+            name: /charizard1/i
+          })
     })
 
 })

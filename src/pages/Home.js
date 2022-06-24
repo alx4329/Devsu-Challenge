@@ -32,7 +32,7 @@ const Home = ()=>{
             <button onClick={()=>setShowCreate(!showCreate)} >Nuevo</button>
             <Pokemons list={filteredPokemons} />
             {
-                showCreate && <Create/>
+                showCreate && <Create cancel={setShowCreate} />
             }
         </div>
     )

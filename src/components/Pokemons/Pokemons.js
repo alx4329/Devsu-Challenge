@@ -16,7 +16,7 @@ const Pokemons = ({list}) => {
                 </thead>
                 <tbody>
                     {
-                        list?.map((item)=>{
+                        list.map((item)=>{
                             return <PokemonLine 
                                     key={item.id} 
                                     details={item} />})
