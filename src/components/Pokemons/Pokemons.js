@@ -1,17 +1,17 @@
 import * as React from 'react'
 import PokemonLine from '../PokemonLine/PokemonLine'
-
+import './Pokemons.css'
 const Pokemons = ({list, updateList}) => {
     return (
         <div>
-            <table border="1" >
+            <table border="1" cellSpacing="0" cellPadding="2" >
                 <thead>
                     <tr>
-                        <th>Nombre</th>
-                        <th>Imagen</th>
-                        <th>Ataque</th>
-                        <th>Defensa</th>
-                        <th>Acciones</th>
+                        <th className='cell-big' >Nombre</th>
+                        <th className='cell-small' >Imagen</th>
+                        <th className='cell-small' >Ataque</th>
+                        <th className='cell-small' >Defensa</th>
+                        <th className='cell-big'>Acciones</th>
                     </tr>
                 </thead>
                 <tbody>

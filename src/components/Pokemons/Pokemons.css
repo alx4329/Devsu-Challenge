@@ -1,0 +1,22 @@
+table {
+    position: relative;
+    width: 100%;
+    border-radius: 0.2rem;
+}
+/* th, td {
+    position: relative;
+    width: 25%;
+ } */
+
+ .cell-big{
+    width: 25%;
+    text-align: center;
+}
+.cell-small{
+    width: 10%;
+    text-align: left;
+}
+.image-button{
+     text-align: center;
+    
+ }

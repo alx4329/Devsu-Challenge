@@ -10,16 +10,14 @@ export const addPokemon = async(data)=>{
 }
 
 export const editPokemon = async({data, id})=>{
-    
     const url = update_pokemon + id
     console.log(url)
     return axios.put(url, data)
 }
 
-export const deletePokemon = async(data)=>{
-    const url = update_pokemon + data.id
-
+export const deletePokemon = async(id)=>{
+    const url = update_pokemon + id
     console.log(url)
     console.log("deletinnn")
-    // return axios.delete(update_pokemon, )
+    return axios.delete(url )
 }

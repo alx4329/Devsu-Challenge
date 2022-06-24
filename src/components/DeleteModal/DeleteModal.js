@@ -13,7 +13,9 @@ const DeleteModal = ({id, name, updateList}) =>{
     }
     return(
         <>
-            <button onClick={handleShow} >Borrar</button>
+            <button onClick={handleShow} className="boton-table" >
+                <span className="material-symbols-outlined" style={{color:"purple"}} >delete</span>
+            </button>
             {
                 showModal&&<div id="myModal" className="modal">
                 
