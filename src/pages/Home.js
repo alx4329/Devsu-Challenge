@@ -30,7 +30,7 @@ const Home = ()=>{
             <h3>Listado de Pokemon</h3>
             <SearchBar pokemons={pokemonsList} setPokemons={setFilteredPokemons} />
             <button onClick={()=>setShowCreate(!showCreate)} >Nuevo</button>
-            <Pokemons list={filteredPokemons} />
+            <Pokemons list={filteredPokemons} updateList={loadPokemons}/>
             {
                 showCreate && <Create cancel={setShowCreate} />
             }

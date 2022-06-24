@@ -1,6 +1,6 @@
 import * as React from 'react'
-
-const PokemonLine = ({details})=>{
+import EditModal from '../EditModal/EditModal'
+const PokemonLine = ({details, updateList})=>{
     return(
         <tr>
             <td>{details.name}</td>
@@ -12,7 +12,7 @@ const PokemonLine = ({details})=>{
             <td>{details.attack}</td>
             <td>{details.defense}</td>
             <td>                
-            <button>Editar</button>
+            <EditModal props={details} updateList={updateList} />
             <button>Borrar</button>                
             </td>
         </tr>

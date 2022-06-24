@@ -1,7 +1,7 @@
 import * as React from 'react'
 import PokemonLine from '../PokemonLine/PokemonLine'
 
-const Pokemons = ({list}) => {
+const Pokemons = ({list, updateList}) => {
     return (
         <div>
             <table border="1" >
@@ -19,7 +19,10 @@ const Pokemons = ({list}) => {
                         list.map((item)=>{
                             return <PokemonLine 
                                     key={item.id} 
-                                    details={item} />})
+                                    details={item}
+                                    updateList={updateList}
+                                     />
+                                    })
                     }
                 </tbody>
                     
