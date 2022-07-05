@@ -4,7 +4,7 @@
 Este repositorio presenta los resultados del *Challenge Front End Devsu* para el puesto de **Desarrollador Full Stack**
 El proyecto consiste en un CRUD de pokemons.
 El frontend se ha realizado con React y Css.
-Los componentes se han probado utilizando react-testing-library y Jest.
+Los componentes se han testeado utilizando react-testing-library y Jest.
 
 Este proyecto se ha probado con éxito utilizando: 
     node: v16.13.1
